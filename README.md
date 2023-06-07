@@ -1,2 +1,2 @@
-# react_muhammad-sholehhudin
-Ini adalah Repository pengumpulan task untuk program Mini Bootcamp di Alta kelas FrontEnd
+# React_muhammad-sholehhudin
+Repository pengumpulan task untuk program Mini Bootcamp di Altera Academy kelas Frontend
