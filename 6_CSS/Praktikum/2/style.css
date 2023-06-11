@@ -1,0 +1,30 @@
+nav.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav.navbar .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+nav.navbar .navbar-container .navbar-container-logo img{
+    width: 150px;
+}
+
+nav.navbar .navbar-container .navbar-container-navigations{
+    display: flex;
+    gap: 20px;
+}
+
+nav.navbar .navbar-container .navbar-container-navigations a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
