@@ -1,9 +1,23 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Slabo 27px';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/slabo27px/v12/mFT0WbgBwKPR_Z4hGN2qgxED1XJ7.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+body{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+}
+
 nav.navbar{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: white;
 }
 
 nav.navbar .navbar-container{
@@ -26,5 +40,49 @@ nav.navbar .navbar-container .navbar-container-navigations{
 
 nav.navbar .navbar-container .navbar-container-navigations a{
     text-decoration: none;
-    color: cornflowerblue;
+    color: rgb(83, 138, 240);
+}
+
+.content .content-background img{
+    width: 100%;
+    height: 120vh;
+    margin-top: 52px;
+}
+
+.content .content-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.content .content-overlay .content-overlay-title h1{
+    font-size: 35px;
+    margin: 30px;
+    color: rgb(36, 35, 35);
+}
+
+.content .content-overlay .content-overlay-article{
+    background-color: white;
+    padding: 35px;
+    width: 70%;
+}
+
+.content .content-overlay .content-overlay-article .content-overlay-article-heading h2{
+    font-size: 16px;
+    color: rgb(83, 138, 240);
+    margin-bottom: 20px;
+}
+
+.footer{
+    height: 52px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
