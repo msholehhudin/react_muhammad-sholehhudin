@@ -47,12 +47,18 @@
 
 .main-article{
     margin-top: 100px;
-    /* padding-right: 82px !important; */
     text-align: justify;
     line-height: 2;
 }
 
-.list-unstyled li::before{
-    content: "> ";
-    line-height: 2.5;
+.footer-article{
+    color: white;
+    background-color: rgb(45, 46, 46);
+    padding-bottom: 50px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.footer-text{
+   
 }
