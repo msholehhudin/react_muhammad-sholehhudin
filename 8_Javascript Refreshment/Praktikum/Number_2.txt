@@ -1,0 +1,12 @@
+// NOMER 2
+
+a. Baris nomer 21,22,23 tidak tampil dikarenakan dia menggunakan logika percabangan dengan nilai apabila nilai dari terdaftar sama dengan true maka blok kode akan di jalankan. 
+sedangkan nilai terdaftar telah di assign dengan nilai false pada awal deklarasi variabel.
+
+b. Deklarasi variabel pada baris 26 menyebabkan error dikarenakan kode mencoba untuk merubah nilai dari variabel "const nama" yang dimana variabel ini bertipe const atau konstan. 
+Di dalam javascript, ketika kita mendeklarasikan variable menggunakan const, itu berarti kita telah membuat variabel dengan nilai yang tidak dapat diubah (immutable). Jadi, ketika 
+kita mencoba mengganti nilai variable yang di deklarasikan dengan "const", Javascript akan menghasilkan error.
+
+c. Ya, dengan melakukan komen pada baris 26 maka kode di baris 28 dan setelahnya dapat di eksekusi. Seperti yang dijelaskan pada nomer sebelumnya bahwa re-assign pada variabel
+yang di deklarasikan menggunakan "const" maka akan menyebabkan kode Javascript menjadi error. Sehingga ketika kita memberikan komen pada baris 26, artinya kode tersebut tidak 
+akan di eksekusi. Sehingga kode bisa mengeksekusi baris berikutnya dengan mengabaikan baris 26 tersebut.
