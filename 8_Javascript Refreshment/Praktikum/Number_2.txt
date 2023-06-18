@@ -1,7 +1,8 @@
 // NOMER 2
 
-a. Baris nomer 21,22,23 tidak tampil dikarenakan dia menggunakan logika percabangan dengan nilai apabila nilai dari terdaftar sama dengan true maka blok kode akan di jalankan. 
-sedangkan nilai terdaftar telah di assign dengan nilai false pada awal deklarasi variabel.
+a. Baris nomer 21, 22, 23 tidak tampil dikarenakan dia menggunakan logika percabangan dengan nilai apabila nilai dari terdaftar sama dengan true maka blok kode akan di jalankan. 
+sedangkan nilai "terdaftar" telah di assign dengan nilai "false" pada awal deklarasi variabel. Sehingga blok kode pada baris 21, 22, 23 tidak akan di jalankan sebelum kondisi if nya terpenuhi.
+Yaitu kondisi jika variabel "terdaftar" bernilai "true".
 
 b. Deklarasi variabel pada baris 26 menyebabkan error dikarenakan kode mencoba untuk merubah nilai dari variabel "const nama" yang dimana variabel ini bertipe const atau konstan. 
 Di dalam javascript, ketika kita mendeklarasikan variable menggunakan const, itu berarti kita telah membuat variabel dengan nilai yang tidak dapat diubah (immutable). Jadi, ketika 
