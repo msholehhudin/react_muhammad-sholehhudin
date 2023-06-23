@@ -1,0 +1,11 @@
+ 1. Terdapat beberapa kekurangan dalam penulisan kode tersebut.
+ 2. Kekurangan terjadi pada :
+    a. Deklarasi variabel pada class user 
+    b. Deklarasi variable pada class userService 
+    c. Penamaan class dan function yang kurang tepat
+    d. Penggunaan function filter yang kurang tepat
+3. Alasan untuk tiap kesalahan :
+    a. Deklarasi variabel pada class user tidak benar karena tidak terdefinisi dengan tepat. Apabila memang ingin menginisialisasikan nilai awal, bisa menggunakan constructor.
+    b. Deklarasi variable pada class userService juga tidak terdefinisi dengan benar.
+    c. Ketidak konsistenan dalam penamaan class. userService menggunakan camelCase, seharusnya getallusers dan getuserbyid juga mengikuti gaya penamaan tersebut.
+    d. Penggunaan function filter yang kurang tepat alias tidak terdefinisi dengan jelas kegunaan nya seperti apa.
