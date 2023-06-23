@@ -1,6 +1,6 @@
  1. Terdapat beberapa kekurangan dalam penulisan kode tersebut.
  2. Kekurangan terjadi pada :
-    a. Deklarasi variabel pada class user 
+    a. Deklarasi variabel pada class user.
     b. Deklarasi variable pada class userService 
     c. Penamaan class dan function yang kurang tepat
     d. Penggunaan function filter yang kurang tepat
