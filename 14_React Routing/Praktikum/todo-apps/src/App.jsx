@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { AppAbout, Home, AuthorAbout } from "../Constant";
 import AboutAuthor from "./pages/about-page/about-author";
 import AboutApp from "./pages/about-page/about-app";
+import PageNotFound from "./pages/not found";
 
 function App() {
   const [dataList, setDataList] = useState(MockData);
@@ -25,6 +26,10 @@ function App() {
     {
       path: AuthorAbout,
       element: <AboutAuthor />,
+    },
+    {
+      path: "*",
+      element: <PageNotFound />,
     },
   ]);
 
