@@ -1,0 +1,8 @@
+.about-container{
+    display: flex;
+}
+
+.about{
+    margin-top: 200px;
+    margin-left: 80px;
+}

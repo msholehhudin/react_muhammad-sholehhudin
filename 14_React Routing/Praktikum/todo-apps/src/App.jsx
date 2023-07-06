@@ -2,7 +2,9 @@ import { useState } from "react";
 import ToDo from "./todo-apps";
 import { MockData } from "../MockData";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./global/layout/Layout";
+import { AppAbout, Home, AuthorAbout } from "../Constant";
+import AboutAuthor from "./pages/about-page/about-author";
+import AboutApp from "./pages/about-page/about-app";
 
 function App() {
   const [dataList, setDataList] = useState(MockData);
@@ -13,12 +15,16 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: Home,
       element: <ToDo dataList={dataList} updateDataList={updateDataList} />,
     },
     {
-      path: "/about",
-      element: <div>About Page</div>,
+      path: AppAbout,
+      element: <AboutApp />,
+    },
+    {
+      path: AuthorAbout,
+      element: <AboutAuthor />,
     },
   ]);
 

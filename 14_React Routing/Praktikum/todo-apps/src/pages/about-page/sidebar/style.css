@@ -39,10 +39,12 @@
 
   .text {
     color: #a5f3e0;
-    text-decoration: none;
   }
 
   .text:hover{
     cursor: pointer;
   }
 
+  .text-nav{
+    margin-top: 100px;
+  }
