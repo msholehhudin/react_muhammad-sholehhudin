@@ -178,7 +178,7 @@ export default function FormPage() {
           </label>
         </div>
 
-        <span style={{ color: "red" }}>{errMsg.nama}</span>
+        {errMsg.nama && <span style={{ color: "red" }}>{errMsg.nama}</span>}
         {errMsg.noHandphone && (
           <span style={{ color: "red" }}>{errMsg.noHandphone}</span>
         )}
