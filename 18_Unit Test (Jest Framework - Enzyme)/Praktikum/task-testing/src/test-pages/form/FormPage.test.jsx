@@ -5,7 +5,6 @@ import NameForm from "./FormCoding";
 describe("NameForm", () => {
   test("renders NameForm component", () => {
     render(<NameForm />);
-    // screen.debug();
 
     expect(
       screen.getByText("Pendaftaran Peserta Coding Bootcamp")
@@ -19,10 +18,14 @@ describe("NameForm", () => {
     fireEvent.input(screen.getByRole("textbox", { name: /nama/i }), {
       target: { value: "Muhammad Sholehhudin" },
     });
+    fireEvent.input(screen.getByRole("textbox", { name: /email/i }), {
+      target: { value: "sholeh@gmail.com" },
+    });
 
     expect(screen.getByLabelText(/Nama Lengkap/)).toHaveValue(
       "Muhammad Sholehhudin"
     );
+    expect(screen.getByLabelText(/Email/)).toHaveValue("sholeh@gmail.com");
   });
 
   //   test("input Nama Lengkap with Number", () => {});
