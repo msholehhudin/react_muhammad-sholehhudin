@@ -28,7 +28,19 @@ describe("NameForm", () => {
     expect(screen.getByLabelText(/Email/)).toHaveValue("sholeh@gmail.com");
   });
 
-  //   test("input Nama Lengkap with Number", () => {});
+  test("input Nama Lengkap with Number", () => {
+    render(<NameForm />);
+    fireEvent.input(screen.getByRole("textbox", { name: /nama/i }), {
+      target: { value: "Muhammad Sholehhudin12" },
+    });
+
+    expect(screen.getByLabelText(/Nama Lengkap/)).toHaveValue(
+      "Muhammad Sholehhudin12"
+    );
+    expect(
+      screen.getByText("Nama Lengkap Harus Berupa Huruf")
+    ).toBeInTheDocument();
+  });
 
   //   test("submit button", () => {});
 });
