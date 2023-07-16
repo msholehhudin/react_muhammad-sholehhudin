@@ -187,7 +187,11 @@ export default function NameForm() {
         <br />
         <br />
         <input type="submit" value="Submit" />
-        <button className={styles.buttonReset} onClick={resetForm}>
+        <button
+          className={styles.buttonReset}
+          onClick={resetForm}
+          data-testid="reset-button"
+        >
           Reset
         </button>
       </form>
