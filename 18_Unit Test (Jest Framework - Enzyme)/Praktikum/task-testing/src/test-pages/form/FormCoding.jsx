@@ -61,10 +61,10 @@ export default function NameForm() {
       errorMassage.email !== "" ||
       errorMassage.noHandphone !== ""
     ) {
-      console.log("HEREEE");
+      // console.log("HEREEE");
       alert(`Data Pendaftar Tidak Sesuai`);
     } else {
-      console.log("HEREE1");
+      // console.log("HEREE1");
       alert(`Data Pendaftar "${data.nama}" Berhasil Diterima`);
       resetForm();
     }
